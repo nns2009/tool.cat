@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import Head from 'next/head';
+import Router from "next/router";
+
+import withGA from "next-ga";
 
 const md5 = require("crypto-js/md5");
 const sha1 = require("crypto-js/sha1");
@@ -189,7 +192,7 @@ var charset = uppercase + lowercase + digits;
   );
 };
 
-export default function WholeApp() {
+function WholeApp() {
   return <>
     <Head>
       <title>Transform strings fast</title>
@@ -221,3 +224,5 @@ export default function WholeApp() {
     </style>
   </>;
 }
+
+export default withGA("UA-59239493-2", Router)(WholeApp);
