@@ -123,7 +123,7 @@ const BuyMeATea = () =>
       color: #000000 !important;
     }
     `}</style>
-    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
+    
     <a className="bmc-button" target="_blank" href="https://www.buymeacoffee.com/nns2009">
       <img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a Tea" />
       <span style={{ marginLeft: '5px' }}>Buy me a Tea</span>
@@ -151,6 +151,13 @@ function Index() {
           />
         </div>
       )}
+      <div style={{ whiteSpace: 'pre' }}>{`
+Usefull consts:
+var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var lowercase = uppercase.toLowerCase();
+var digits = '0123456789';
+var charset = uppercase + lowercase + digits;
+      `}</div>
       <footer>
         <div>
           Created By Igor Konyakhin
@@ -186,6 +193,7 @@ export default function WholeApp() {
   return <>
     <Head>
       <title>Transform strings fast</title>
+      <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
     </Head>
     <Index />
     <style global jsx>{`
